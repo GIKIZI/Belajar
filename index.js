@@ -1,3 +1,7 @@
+const gender="male";
+let umur=7;
+
+
 if (umur <= 0) {
   console.log("ngaco");
 } else if (umur <= 12) {
