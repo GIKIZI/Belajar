@@ -1,1 +1,3 @@
 "# Belajar minggu" 
+
+Ganti Nama
