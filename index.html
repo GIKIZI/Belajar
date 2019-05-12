@@ -8,20 +8,28 @@
 </head>
 <body>
 
-    GUEEEE:
-    <div id="kataku"> </div>
-    <input type="text" id="tbNama"/><input type="submit" onclick="gantiNama()"/>
+    TUGAS GW:
+    <div id="tugasku"> </div>
+    <input type="text" id="tbTugas"/><input type="submit" onclick="tambahTugas()"/>
 
 
     
 <script>
+//masukin string atau kata kata kosong ke variable tugas
 
+let tugas="";
 
-function gantiNama(){
+//membuat fungsion tambah tugas, yang bisa dipanggil di dalam on click
+function tambahTugas(){
+//mengupdate variable tugas sama dengan tugas yang sudah ada di tambah tugas dari textbox dan enter
+tugas = tugas+"-"+document.querySelector("#tbTugas").value+"<br/>"
+//querry selector mengambil element tugasku atau div yang di atas dan mengset isi dari div itu dengan variable tugas yang baru di update di line sebelumnya
 
+document.querySelector("#tugasku").innerHTML=tugas;
 
-let nama=document.querySelector("#tbNama").value;
-document.querySelector("#kataku").innerHTML=nama;
+//mengupdate isi dari input txtbox tbtugas jadi kosong
+document.querySelector("#tbTugas").value="";
+
 
 
 
