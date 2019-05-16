@@ -1,53 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-    TUGAS GW:
-    <div id="tugasku"> </div>
-    <input type="text" id="tbTugas"/><input type="submit" onclick="tambahTugas()"/>
-
-
-    
-<script>
-//masukin string atau kata kata kosong ke variable tugas
-
-let tugas="";
-
-//membuat fungsion tambah tugas, yang bisa dipanggil di dalam on click
-function tambahTugas(){
-//mengupdate variable tugas sama dengan tugas yang sudah ada di tambah tugas dari textbox dan enter
-tugas = tugas+"-"+document.querySelector("#tbTugas").value+"<br/>"
-//querry selector mengambil element tugasku atau div yang di atas dan mengset isi dari div itu dengan variable tugas yang baru di update di line sebelumnya
-
-document.querySelector("#tugasku").innerHTML=tugas;
-
-//mengupdate isi dari input txtbox tbtugas jadi kosong
-document.querySelector("#tbTugas").value="";
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
-</body>
+<html>
+    <head>
+        <title>Hello World Javascript</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+    </body>
 </html>
