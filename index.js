@@ -1,4 +1,7 @@
-alert("tesssss");
 
-document.write("hahahaha");
 
+alert("Haiiiiii");
+
+function sayhii(){
+  alert("Ciluk Baa")
+}
